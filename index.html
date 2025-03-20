@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav class="mainframe" style="margin-bottom: 100px;">
+            <div>&lt Muthu Sarvanan &gt</div>
+            <ul class="grp">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburg">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+        <section id="home">
+            <div class="home">
+                <div>
+                     <div class="mine">
+                    Hello I'm </div>
+                    <h2 style="color: #007bff; ">Muthu Sarvanan S </h2>
+                    <hr class="vr">
+                    <div class="mine">
+                    so and so 
+                    </div>
+                    <div class="btn">
+                    <button> <a href=""></a> Github</button>
+                    <button>Resume</button>
+                    <button>Other socialplatform
+                    </button>
+                    </div>
+                </div>
+                    <div class="img"><img src="images/20240921_170035.jpg" width="230" ></div> 
+            </div>
+        </section>
+        <section id="about">
+            <h1 class="title">About Me</h1>
+            <div class="contents">
+                <div class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. VoluptatLorem, ipsum dolor sit amet consectetur adipisicing elit. Eos nobis fuga quaerat error aliquam porro, excepturi nemo commodi aperiam eaque iusto id exercitationem molestias, atque itaque, sed soluta! Placeat, iste.</div>
+                <div><img src="./images/20240921_170035.jpg" alt="imgs" width="130" style="border-radius: 100%"></div>
+            </div>
+        </section>
+        <section id="skills">
+            <h1 class="title">My Skills <span style="color: #ed0a52;">&</span> Timeline</h1>
+            <div class="skill">
+                <div class="icon">
+                    <img src="./images/html.jpg" alt="skills" width="80px" height="80px">
+                    <img src="./images/css.jpg" alt="skills" width="80px" height="80px">
+                    <img src="./images/js.jpg" alt="skills" width="80px" height="80px">
+                    <img src="./images/py.jpg" alt="skills" width="80px" height="80px">
+                    <img src="./images/java.jpg" alt="skills" width="80px" height="80px">
+                    <img src="./images/ex.jpg" alt="skills" width="80px" height="80px">
+                </div>
+                <div class="vline"></div>
+                <div class="timeline">
+                    <ul>
+                        <li>Harharan Computers <dd>May 2022 ( Py )</dd></li><br>
+                        <li>Online <dd>June 2022 ( Html )</dd></li><br>
+                        <li>Online <dd>Feb 2023 ( Css )</dd></li><br>
+                        <li>Online <dd>May 2023 ( Java )</dd></li><br>
+                        <li>Online <dd>Jan 2025 ( Js )</dd></li><br>
+                        <li>Online  <dd> Not Yet Started ( Excel )</dd></li><br>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h1 class="title">My Projects</h1>
+            <div class="prj">
+                <div class="prjimg">
+                    <img src="https://picsum.photos/500/200" alt="">
+                    <div class="desc" style="padding: 10px;">
+                        <div>Project one</div>
+                        <p>This is about my project which I complete </p>
+                    </div>
+                </div>
+                <div class="prjimg">
+                    <img src="https://picsum.photos/500/200" alt="">
+                    <div class="desc" style="padding: 10px;">
+                        <div>Project one</div>
+                        <p>This is about my project which I complete </p>
+                    </div>
+                </div>
+
+                <div class="prjimg">
+                    <img src="https://picsum.photos/500/200" alt="">
+                    <div class="desc" style="padding: 10px;">
+                        <div>Project one</div>
+                        <p>This is about my project which I complete </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1 class="title">Contact Section</h1>
+            <form action="https://formspree.io/f/meoodwgz"
+            method="POST" class="contactform">
+                <h3>contact Me </h3>
+                <div>
+                    <label for="name"> Name</label>
+                    <input type="text" id="name" name="name" required> 
+                </div>
+                <div>
+                   <label for="email"> Email</label>
+                    <input type="text" id="email" email="email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                   <textarea name="message" id="" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <hr class="line">
+    <h5 style="padding: 20px; "> Made with Muthu Sarvanan</h5>
+</body>
+<script>
+    document.addEventListener("DOMContentLoader" ,function()
+    {
+        const hamburg = document.querySelector(".hamburg");
+        const mainframe = document.querySelector(".mainframe");
+
+        hamburg.addEventListener("click",function(){mainframe.classList.toggle("active");
+        })
+    })
+</script> 
+</html>
