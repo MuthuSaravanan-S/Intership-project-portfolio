@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 1.3rem;
+}
+
+body{
+    background-color: rgba(11, 10, 10, 0.961);
+    color: whitesmoke;
+    width: 100%;
+    margin: 0;
+}
+
+section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}  
+
+.title{
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+}
+
+/* home section style*/
+.mainframe{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
+    margin: 20px 45px;
+} 
+
+.vr{
+    width: 50%; border-color: #007bff; 
+    height: 2px;
+}
+
+.grp{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 40px;     
+}
+ 
+.grp a{
+    text-decoration: none;
+    color: white;
+}
+
+.grp a:hover{
+    text-decoration: underline;
+    color: #007bff;
+}
+
+.home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+.mine{
+    font-size: 30px;
+    font-weight: 300;
+    font-family: "Qwigley",cursive;
+}
+
+
+
+/* home section btn-style*/
+.btn > button{
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 7px 5px;
+    background: none;
+    color: #007bff;
+}
+
+.btn > button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*about section style*/
+.contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:  100%;
+    font-size: 1.3rem;
+}
+
+.para{
+    width: 35%;
+    padding-right:50px;
+}
+
+/* skills section style*/
+.icon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0;
+    width: 50%; 
+    padding-right: 100px;
+}
+
+.icon>img{
+    background-color: #00000031;
+    border: 2px solid rgba(249, 201, 56, 0.462);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.timeline{
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 30%;
+}
+
+
+.skill{
+    display: flex;
+    justify-content: space-around;
+}
+
+.vline{
+    border: 1px solid rgba(255, 255, 255, 0.599);
+    margin-left: -150px;
+}
+
+/* project section style*/
+dd{
+    font-size: 15px;
+    color: rgba(250, 255, 255, 0.59);
+    padding-top: 10px;
+}
+
+.prjimg{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    border-radius: 9px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    width: 100%;
+}
+
+.prjimg:hover{
+    transition: transform 0.2s;
+    transform: scale(1.05);
+} 
+
+.desc>div{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.desc>p{
+    font-size: 18px;
+}
+
+.prj{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,5fr));
+    gap: 30px;
+    padding: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+/* contact section style*/
+.contactform{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    text-align: start;
+    width: 55%;
+    margin: 10px;
+    font-size: 1rem;
+}
+
+.contactform input,textarea{
+    padding: 10px;
+    background: none;
+    border: 1px solid rgba(204, 204, 204, 0.882);
+    border-radius: 5px;
+    width: 100%;
+    color: aliceblue;
+}
+
+.contactform>div{
+    margin-bottom: 10px;
+    padding: 20px;
+    font-weight: bolder;
+}
+
+.contactform textarea{
+    height: 180px;
+    resize: vertical;
+}
+
+.contactform button{
+    color: whitesmoke;
+    background-color: #007bff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+
+#home,#about,#skills,#projects,#contact{
+    margin-bottom: 180px;
+}
+
+.hamburg{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+
+}
+
+.hamburg .bar{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+@media (min-width: 300) and (max-width: 768){
+    
+    .main{
+        padding-left: 40px;
+        padding-right: 40px;
+    }   
+    .contents{
+        flex-direction: column;
+    }
+    .icon{
+        gap: 30px;
+    }
+    .skill > div{
+        width: 100%;
+    }
+    .mainframe{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        top: 50;
+        position: absolute;
+        background-color: black;
+    }
+    .mainframe .active{
+        display: flex;
+    }
+    .grp{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        background-color: black;
+    }
+    .grp..active{
+        display: flex;
+    }
+    .hamburg{
+        display: flex;
+    }
+} 
+
